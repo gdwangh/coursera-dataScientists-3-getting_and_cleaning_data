@@ -1,11 +1,11 @@
 ##merge the data set and extract the the measurements on the mean and standard deviation 
-*read table from file "feature.txt" to be used as the column names of 
+* read table from file "feature.txt" to be used as the column names of 
   In features.txt, the second column is the descriptor of the feature which is corresponding to the columns in the train and test dataset, I think. So it's good to use them as the columns of the data table read from ./train/X_train.txt and "./test/X_test.txt" in the next step.
   
-*clean the feature descriptor for variables name
+* clean the feature descriptor for variables name
 For the descriptor in the second columns have some charactors, such as "(" ,")", which is invalid or not good as column names, so the scipt replace "()-_" with "." to get the feature descriptor for data variable name.
   
-*read the data set
+* read the data set
 read.table() read the data from "X_train.txt" & "X_test.txt", using parameter "col.names" to figure feature descriptor as the names of the variables, and store the data set into memory
 
 *create the logic vetor on variables names of measurements on the men and standard deviation
