@@ -1,0 +1,226 @@
+activity.name	charaters
+	the activity name performed:
+		WALKING
+		WALKING_UPSTAIRS
+		WALKING_DOWNSTAIRS
+		SITTING
+		STANDING          
+		LAYING
+
+Subject.identifies	integer 1..30
+	An identifier of the subject who performed the activity for each window sample. Its range is from 1 to 30.
+		
+
+t.body.acc.mean.x	decimal -1..1
+	Mean of the X-axial body acceleration signal obtained by subtracting the gravity from the total acceleration  from the smartphone accelerometer X axis in standard gravity units 'g'
+		
+t.body.acc.mean.y	decimal -1..1
+	Mean of the Y-axial body acceleration signal obtained by subtracting the gravity from the total acceleration  from the smartphone accelerometer Y axis in standard gravity units 'g'
+
+
+t.body.acc.mean.z	decimal -1..1
+	Mean of the Z-axial body acceleration signal obtained by subtracting the gravity from the total acceleration  from the smartphone accelerometer Z axis in standard gravity units 'g'
+
+t.body.acc.std.x	decimal -1..1
+	Standard deviation of the X-axial body acceleration signal obtained by subtracting the gravity from the total acceleration from the smartphone accelerometer X axis in standard gravity units 'g'
+
+		
+t.body.acc.std.y	decimal -1..1
+	Standard deviation of the Y-axial body acceleration signal obtained by subtracting the gravity from the total acceleration from the smartphone accelerometer Y axis in standard gravity units 'g'
+
+t.body.acc.std.z	decimal -1..1
+	Standard deviation of the Z-axial body acceleration signal obtained by subtracting the gravity from the total acceleration from the smartphone accelerometer Z axis in standard gravity units 'g'
+
+t.gravity.acc.mean.x	decimal -1..1
+	Mean of the X-axial gravity acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'
+
+t.gravity.acc.mean.y	decimal -1..1
+	Mean of the Y-axial gravity acceleration signal from the smartphone accelerometer Y axis in standard gravity units 'g'
+
+t.gravity.acc.mean.z	decimal -1..1
+	Mean of the Z-axial gravity acceleration signal from the smartphone accelerometer Z axis in standard gravity units 'g'
+
+t.gravity.acc.std.x	decimal -1..1
+	Standard deviation of the X-axial gravity acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'
+
+
+t.gravity.acc.std.y	decimal -1..1
+	Standard deviation of the Y-axial gravity acceleration signal from the smartphone accelerometer Y axis in standard gravity units 'g'
+
+
+t.gravity.acc.std.z	decimal -1..1
+	Standard deviation of the Z-axial gravity acceleration signal from the smartphone accelerometer Z axis in standard gravity units 'g'
+
+
+t.body.acc.jerk.mean.x		decimal -1..1
+	Mean of the X-axial body linear acceleration derived in time to obtain Jerk signals
+
+t.body.acc.jerk.mean.y		decimal -1..1
+	Mean of the Y-axial body linear acceleration derived in time to obtain Jerk signals
+
+t.body.acc.jerk.mean.z		decimal -1..1
+	Mean of the Z-axial body linear acceleration derived in time to obtain Jerk signals
+
+
+t.body.acc.jerk.std.x		decimal -1..1
+	Standard deviation of the X-axial body linear acceleration derived in time to obtain Jerk signals
+
+t.body.acc.jerk.std.y		decimal -1..1
+	Standard deviation of the Y-axial body linear acceleration derived in time to obtain Jerk signals
+
+t.body.acc.jerk.std.z		decimal -1..1
+	Standard deviation of the Z-axial body linear acceleration derived in time to obtain Jerk signals
+
+t.body.gyro.mean.x		decimal -1..1
+	Mean of the X-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+t.body.gyro.mean.y		decimal -1..1
+	Mean of the Y-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+t.body.gyro.mean.z		decimal -1..1
+	Mean of the Z-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+
+t.body.gyro.std.x		decimal -1..1
+	Standard deviation  of the X-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+
+t.body.gyro.std.y		decimal -1..1
+	Standard deviation  of the Y-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+t.body.gyro.std.z		decimal -1..1
+	Standard deviation  of the Y-axial Angular velocity measured by the gyroscope for each window sample. The units are radians/second
+
+
+t.body.gyro.jerk.mean.x		decimal -1..1
+	Mean of the X-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.gyro.jerk.mean.y		decimal -1..1
+	Mean of the Y-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.gyro.jerk.mean.z		decimal -1..1
+	Mean of the Z-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.gyro.jerk.std.x		decimal -1..1
+	Standard deviation of the X-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.gyro.jerk.std.y		decimal -1..1
+	Standard deviation of the Y-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.gyro.jerk.std.z		decimal -1..1
+	Standard deviation of the Z-axial angular velocity derived in time to obtain Jerk signals
+
+t.body.acc.mag.mean.		decimal -1..1
+ 	Mean of the magnitude of three-dimensional body linear acceleration calculated using the Euclidean norm
+
+t.body.acc.mag.std.		decimal -1..1
+ 	Standard deviation of the magnitude of three-dimensional body linear acceleration calculated using the Euclidean norm
+
+t.gravity.acc.mag.mean.		decimal -1..1
+ 	Mean of the magnitude of three-dimensional gravity acceleration calculated using the Euclidean norm
+
+t.gravity.acc.mag.std.		decimal -1..1
+ 	Standard deviation of the magnitude of three-dimensional gravity acceleration calculated using the Euclidean norm
+
+t.body.acc.jerk.mag.mean.	decimal -1..1
+ 	Mean of the magnitude of three-dimensional body linear acceleration derived in time to obtain Jerk signals calculated using the Euclidean norm
+
+t.body.acc.jerk.mag.std.	decimal -1..1
+ 	Standard deviation  of the magnitude of three-dimensional body linear acceleration derived in time to obtain Jerk signals calculated using the Euclidean norm
+
+t.body.gyro.mag.mean.		decimal -1..1
+ 	Mean of the magnitude of three-dimensional angular velocity calculated using the Euclidean norm
+
+t.body.gyro.mag.std.		decimal -1..1
+ 	Standard deviation of the magnitude of three-dimensional angular velocity calculated using the Euclidean norm
+
+
+t.body.gyro.jerk.mag.mean.	decimal -1..1
+	Mean of the magnitude of three-dimension alangular velocity   derived in time to obtain Jerk signals calculated using the Euclidean norm
+
+t.body.gyro.jerk.mag.std.	decimal -1..1
+	Standard deviation of the magnitude of three-dimension alangular velocity   derived in time to obtain Jerk signals calculated using the Euclidean norm
+
+f.body.acc.mean.x		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial body linear acceleration signal
+
+f.body.acc.mean.y		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial body linear acceleration signal
+
+f.body.acc.mean.z		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial body linear acceleration signal
+
+
+f.body.acc.std.x		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial body linear acceleration signal
+
+f.body.acc.std.y		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial body linear acceleration signal
+
+
+f.body.acc.std.z		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial body linear acceleration signal
+
+f.body.acc.jerk.mean.x		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial body linear acceleration to obtain Jerk signals
+
+f.body.acc.jerk.mean.y		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial body linear acceleration to obtain Jerk signals
+
+f.body.acc.jerk.mean.z		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial body linear acceleration to obtain Jerk signals
+
+f.body.acc.jerk.std.x		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial body linear acceleration to obtain Jerk signals
+
+f.body.acc.jerk.std.y		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial body linear acceleration to obtain Jerk signals
+
+f.body.acc.jerk.std.z		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial body linear acceleration to obtain Jerk signals
+
+f.body.gyro.mean.x		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial angular velocity acceleration signal
+
+f.body.gyro.mean.y		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial angular velocity acceleration signal
+
+f.body.gyro.mean.z		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial angular velocity acceleration signal
+
+f.body.gyro.std.x		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to X-axial angular velocity acceleration signal
+
+f.body.gyro.std.y		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Y-axial angular velocity acceleration signal
+
+f.body.gyro.std.z		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to Z-axial angular velocity acceleration signal
+
+
+f.body.acc.mag.mean.		decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to the magnitude of three-dimensional liner body acceleration calculated using the Euclidean norm
+
+f.body.acc.mag.std.		decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to the magnitude of three-dmensional liner body acceleration calculated using the Euclidean norm
+
+f.body.body.acc.jerk.mag.mean.	decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to tthe magnitude of three-dimensional body linear acceleration derived in time to obtain Jerk signals calculated using the Euclidean norm
+
+
+f.body.body.acc.jerk.mag.std.	decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to tthe magnitude of three-dimensional body linear acceleration derived to obtain Jerk signals calculated using the Euclidean norm
+
+
+f.body.body.gyro.mag.mean.	decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to the magnitude of angular velocity calculated using the Euclidean norm
+
+
+f.body.body.gyro.mag.std.	decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to the magnitude of angular velocity calculated using the Euclidean norm
+
+f.body.body.gyro.jerk.mag.mean.	decimal -1..1
+	Mean of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to tthe magnitude of angular velocity  derived to obtain Jerk signals calculated using the Euclidean norm
+
+f.body.body.gyro.jerk.mag.std.	decimal -1..1
+	Standard deviation of frequency domain signals producted by applying a Fast Fourier Transform (FFT) to tthe magnitude of angular velocity  derived to obtain Jerk signals calculated using the Euclidean norm
