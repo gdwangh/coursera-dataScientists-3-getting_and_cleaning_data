@@ -28,7 +28,7 @@
 
 	because there is no key to combine the feature data set and activivites lables together, we can't merge the label and name first, otherwise the record order will be changed and doesn't correspond to feature any more.
 	
-* set activity.label as key, and join the activity name and the feature record with acitvities label
+* join and merge the feature and activity name by the key activity_label
 
 ##Appropriately labels the data set with descriptive activity names. 
 * when ready to feature name, "-" & "_" has been change to "."

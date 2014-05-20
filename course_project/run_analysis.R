@@ -24,7 +24,7 @@ active_test<-read.table("./test/y_test.txt", col.names=c("active.label"))
 active_lable<-rbind(active_train,active_test)
 
 # merge feature, active: added a column into feature to hold acivity label 
-feature[, activity.label:=active_lable]
+feature$activity.label<-active_lable
 
 # subject_train: subject identifies(Ö¾Ô¸Õß) of train data set
 subject_train<-read.table("train/subject_train.txt", col.names=c("subject.identifies"))
@@ -34,14 +34,12 @@ subject_test<-read.table("test/subject_test.txt", col.names=c("subject.identifie
 subject<-rbind(subject_train, subject_test)
 
 # merge feature, subject: added a column into feature to hold subject
-feature[, subject.identifies:=subject]
+feature$subject.identifies<-subject
 
 active_label2name<-data.table(read.table("./activity_labels.txt", col.names=c("activity.label","activity.name")))
 
 # join active_lable and acitve_name
-setkey(feature,activity.label)
-setkey(active_label2name,activity.label)
-resFeature<-merge(feature,active_label2name) # join feature and active_label2name with key activity.label
+resFeature<-merge(feature,active_label2name,by="activity.label",all=TRUE) # join feature and active_label2name with key activity.label
 
 # lower the names
 setnames(resFeature,names(resFeature), gsub("[.]+", ".", gsub("([A-Z])", ".\\L\\1", names(resFeature), perl=TRUE))) # insert . before upper when change upper to lower
