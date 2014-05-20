@@ -1,0 +1,55 @@
+To make it work, I needed three new packages installed and loaded.  You might already have them.
+
+install.packages("httr")
+library(httr)
+install.packages("httpuv")
+library(httpuv)
+install.packages("jsonlite")
+library(jsonlite)
+
+
+ To learn a bit more about what is going on I used R help on each of the commands.
+
+help(oauth_endpoints)
+help(oauth_app)
+help(oauth2.0_token)
+help(stop_for_status)
+help(content)
+
+Then I ran step 1, though I'm not sure this is necessary .
+
+oauth_endpoints("github")
+
+
+Next I went to GitHub to Register RStudio to it
+https://github.com/settings/applications
+
+Application Name  :  I used      RStudio    ( but I don't think it matters what you put here)
+Homepage Url        :                https://api.github.com/users/jtleek/repos
+Application description :          coursera coursework    (doesn't matter)
+Authorization Callback Url:      http://localhost:1410
+
+Click on Update Application.
+You should see    Client ID    and a 20-digit hex number
+                             Client Secret    and a very long hex number
+You will need these.
+
+Back to RStudio,
+put your Client ID and Client Secret hex numbers in the oauth_app  command, and run it.
+
+myapp <- oauth_app("github", "your-20-digits", secret="your-very-long-hex-number")
+
+
+Then run step 3
+
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+
+
+At this point I discovered I needed httpuv, and R asked me whether I wanted to save the authorizations to a file .  I said 1. (for yes).
+
+
+Next run step 4, the GET, but with the jtleek/repos  file
+
+req <- GET("https://api.github.com/users/jtleek/repos", config(token = github_token))
+
+This gets the JSON structure and data into a variable called req.
