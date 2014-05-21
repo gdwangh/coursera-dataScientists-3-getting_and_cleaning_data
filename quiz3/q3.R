@@ -25,3 +25,5 @@ DT<-melt(incomeGroup, id="Income.Group",measure.vars="Ranking")
 dcast(DT, Income.Group~variable,mean)
 
 # for question 5
+m$RankGroup<-cut(m$Ranking,breaks=quantile(m$Ranking,probs=seq(0,1,0.2)))
+table(m$RankGroup, m$Income.Group)
